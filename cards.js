@@ -6,7 +6,7 @@ let hasFlippedCard = false;
 let firstCard = null, secondCard = null;
 let lockBoard = false;
 
-const data = [["Writing", "Embroidery", "Drawing & Painting", "Singing", "Room Cleaning", "Learning"], ["Tirunelveli", "Sikkim", "Bangalore", "Chennai", "Murudeeshwar Temple", "Manali"], ["Kulfi Ice cream", "Pani Puri", "Panneer Manchurian", "Milagu Rasam", "Cotton Candy", "Curd Rice"], ["Miffy & Frnds", "Happy Box", "Ear Rings", "PikNik", "Filter Kaapi", "Nature"], ["Mutta Kanni", "Baby Ma", "Chamathu Ponnu", "Papa", "Gayu", "Angry Bird"], ["Dora", "Deivam Thandha Veedu", "Milk Skin", "Eyeliner Smudges", "Power Cut", "Fake Frnds"], ["Kitchen Set", "Greeting Card", "Barbie Doll", "Gee Boom Ba", "Malli Poo", "Balavikas"], ["5 W's", "Live Learn Explore", "Help Ever, Hurt Never", "Ceilings on desire", "Appreciate Life", "Cry and Comeback"], ["Amma Venum", "Mammu Sapten", "Thachiko", "I love you ma", "Aiyooo", "Daddy is my best frnd"], ["Richard Parker", "Childhood Gang", "Red Star", "Arangeram", "Cash Prizes", "Night Owl"], ["Amma", "Amma", "Amma", "Amma", "Amma", "Amma"], ["trust", "respect", "admire", "love", "celebrate", "miss"]];
+const data = [["Writing", "Embroidery", "Drawing & Painting", "Singing", "Room Cleaning", "Learning"], ["Tirunelveli", "Sikkim", "Bangalore", "Chennai", "Pondicherry", "Manali"], ["Kulfi Ice cream", "Pani Puri", "Panneer Manchurian", "Milagu Rasam", "Cotton Candy", "Curd Rice"], ["Miffy & Frnds", "Happy Box", "Ear Rings", "PikNik", "Filter Kaapi", "Nature"], ["Mutta Kanni", "Baby Ma", "Chamathu Ponnu", "Papa", "Gayu", "Angry Bird"], ["Dora", "Deivam Thandha Veedu", "Milk Skin", "Eyeliner Smudges", "Power Cut", "Fake Frnds"], ["Kitchen Set", "Greeting Card", "Barbie Doll", "Gee Boom Ba", "Malli Poo", "Balavikas"], ["5 W's", "Live Learn Explore", "Help Ever, Hurt Never", "Ceilings on desire", "Appreciate Life", "Cry and Comeback"], ["Amma Venum", "Mammu Sapten", "Thachiko", "I love you ma", "Aiyooo", "Daddy is my best frnd"], ["Richard Parker", "Childhood Gang", "Red Star", "Arangeram", "Cash Prizes", "Night Owl"], ["Amma", "Amma", "Amma", "Amma", "Amma", "Amma"], ["trust", "respect", "admire", "love", "celebrate", "miss"]];
 
 const headings = ["Hobbies", "Places", "Food", "Likes", "Names", "Dislikes", "Experience", "Life Quotes", "Dialogues", "Highlights", "Love of my life", "I ____ you"];
 let step = 0;
@@ -85,7 +85,7 @@ function checkForCompletion() {
     if(Array.from(cards).every(card => card.classList.contains("flip"))) {
       if(data.length-1 === step) {
         setTimeout(() => {
-          alert("Congratulations...");
+          alert("Thank you padips..");
           return false;
         }, 1500);
         return false;
